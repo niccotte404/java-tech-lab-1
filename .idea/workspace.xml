@@ -4,30 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab595096-8296-4234-b479-f19886b46265" name="Changes" comment="Add BankService, add command pattern, fix CentralBankService, add memento">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lab1/entities/models/data/Limits.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lab1/entities/models/notifications/BankNotification.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lab1/entities/models/notifications/UserNotification.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lab1/observers/impl/BankObserverImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lab1/observers/impl/CentralBankObserverImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lab1/observers/interfaces/BankObserver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lab1/observers/interfaces/CentralBankObserver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lab1/repositories/impl/AccountRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lab1/repositories/interfaces/AccountRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lab1/commands/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lab1/commands/Command.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lab1/commands/ReplenishCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lab1/commands/ReplenishCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lab1/commands/TransferCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lab1/commands/TransferCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lab1/commands/WithdrawCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lab1/commands/WithdrawCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lab1/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lab1/entities/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lab1/entities/models/Bank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lab1/entities/models/Bank.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lab1/entities/models/CentralBank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lab1/entities/models/CentralBank.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lab1/entities/models/DateInDays.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lab1/entities/models/data/DateInDays.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lab1/entities/models/Percentage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lab1/entities/models/Percentage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lab1/entities/models/Tuple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lab1/entities/models/helpers/Tuple.java" afterDir="false" />
+    <list default="true" id="ab595096-8296-4234-b479-f19886b46265" name="Changes" comment="Done first version of lab-1">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/lab1/services/impl/BankServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lab1/services/impl/BankServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lab1/services/impl/CentralBankServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lab1/services/impl/CentralBankServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lab1/services/interfaces/CentralBankService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lab1/services/interfaces/CentralBankService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +95,7 @@
       <workItem from="1709044614844" duration="1328000" />
       <workItem from="1709046085530" duration="216000" />
       <workItem from="1709050308003" duration="63000" />
-      <workItem from="1709061446994" duration="27379000" />
+      <workItem from="1709061446994" duration="27863000" />
     </task>
     <task id="LOCAL-00001" summary="create project, add main models (User, Account, Bank, Transaction) and enums (TransactionType, UserType, AccountType)">
       <option name="closed" value="true" />
@@ -143,7 +121,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709085488823</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Done first version of lab-1">
+      <option name="closed" value="true" />
+      <created>1709091179652</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1709091179652</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,6 +150,7 @@
     <MESSAGE value="create project, add main models (User, Account, Bank, Transaction) and enums (TransactionType, UserType, AccountType)" />
     <MESSAGE value="add and fix models, add services and impls, validate user verification, make count commission service" />
     <MESSAGE value="Add BankService, add command pattern, fix CentralBankService, add memento" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add BankService, add command pattern, fix CentralBankService, add memento" />
+    <MESSAGE value="Done first version of lab-1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Done first version of lab-1" />
   </component>
 </project>

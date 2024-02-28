@@ -18,7 +18,6 @@ import java.util.Map;
 public class BankServiceImpl implements BankService {
 
     private final Bank currentBank;
-    private double unverifiedLimit;
     private final Map<TransactionType, Transaction> actionMap = new HashMap<>();
 
     public BankServiceImpl(Bank currentBank) {
@@ -41,6 +40,7 @@ public class BankServiceImpl implements BankService {
     @Override
     public Transaction makeTransaction(Transaction transaction) {
 
+        double unverifiedLimit;
         User currUser = currentBank.getClients().stream().filter(user -> user.getId() == transaction.getAccount().getUserId()).findFirst().get();
 
         if (currUser.getStatus() == UserType.UNVERIFIED)
