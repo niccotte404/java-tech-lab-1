@@ -1,8 +1,11 @@
 package com.lab1.entities;
 
+import com.lab1.entities.models.notifications.UserNotification;
 import com.lab1.enums.UserType;
 import lombok.*;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.UUID;
 
 @Getter
@@ -19,6 +22,7 @@ public class User {
     private String email;
     private int passport;
     private UserType status;
+    private List<UserNotification> userNotifications;
 
     public User(@NonNull String name, @NonNull String surname, String email, int passport) {
         this.name = name;
@@ -26,6 +30,7 @@ public class User {
         this.email = email;
         this.passport = passport;
         this.id = UUID.randomUUID();
+        userNotifications = new ArrayList<>();
         verifyUser();
     }
 
@@ -35,5 +40,9 @@ public class User {
             return;
         }
         this.status = UserType.VERIFIED;
+    }
+
+    public void update(UserNotification userNotification){
+        userNotifications.add(userNotification);
     }
 }

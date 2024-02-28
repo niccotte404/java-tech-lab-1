@@ -11,7 +11,9 @@ public class ReplenishCommand implements Command{
     @NonNull
     private Transaction transaction;
     @Override
-    public Transaction execute() {
+    public Transaction execute(double limit) {
+        if (transaction.getAccount().getMoney() + transaction.getMoney() > limit)
+            throw new ArithmeticException("Out of unverified account limit");
         transaction.getAccount().setMoney(transaction.getAccount().getMoney() + transaction.getMoney());
         transaction.setStatus(TransactionStatus.SUCCEED);
         transaction.createMemento();

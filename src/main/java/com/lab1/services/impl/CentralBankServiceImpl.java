@@ -2,6 +2,7 @@ package com.lab1.services.impl;
 
 import com.lab1.entities.Transaction;
 import com.lab1.entities.models.*;
+import com.lab1.entities.models.data.DateInDays;
 import com.lab1.enums.AccountType;
 import com.lab1.services.interfaces.CentralBankService;
 
@@ -15,7 +16,7 @@ public class CentralBankServiceImpl implements CentralBankService {
 
     @Override
     public void createBank(Bank bank) {
-        centralBank.banks.add(bank);
+        centralBank.getBanks().add(bank);
     }
 
     @Override

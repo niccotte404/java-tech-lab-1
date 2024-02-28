@@ -11,7 +11,7 @@ import java.util.List;
 @NoArgsConstructor
 public class CentralBank {
     private static final CentralBank INSTANCE = new CentralBank();
-    public final List<Bank> banks = new ArrayList<>();
+    private final List<Bank> banks = new ArrayList<>();
     public static CentralBank getInstance() {
         return INSTANCE;
     }

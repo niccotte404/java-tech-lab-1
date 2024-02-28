@@ -1,5 +1,6 @@
 package com.lab1.entities.models;
 
+import com.lab1.entities.models.helpers.Tuple;
 import com.lab1.enums.AccountType;
 import lombok.*;
 

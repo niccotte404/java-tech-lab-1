@@ -8,4 +8,5 @@ public interface CentralBankService {
     void createBank(Bank bank);
     void semiBankTransaction(Transaction transaction, Bank departionBank, Bank destinationBank);
     void countBankCommission(int days, Bank bank, Account account);
+
 }

@@ -1,4 +1,4 @@
-package com.lab1.entities.models;
+package com.lab1.entities.models.helpers;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

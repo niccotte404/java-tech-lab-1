@@ -1,6 +1,9 @@
 package com.lab1.entities.models;
 
 import com.lab1.entities.User;
+import com.lab1.entities.models.data.Limits;
+import com.lab1.entities.models.notifications.BankNotification;
+import com.lab1.observers.interfaces.CentralBankObserver;
 import lombok.Getter;
 import lombok.NonNull;
 
@@ -15,8 +18,18 @@ public class Bank {
     private final List<Percentage> percents = new ArrayList<>();
     private final List<User> clients = new ArrayList<>();
     private final List<Account> accounts = new ArrayList<>();
+    private final List<BankNotification> notifications = new ArrayList<>();
+    private double creditLimit = Limits.CREDIT_LIMIT;
+    private double unverifiedLimit = Limits.UNVERIFIED_LIMIT;
 
-    public Bank() {
+    public Bank(CentralBankObserver centralBankObserver, double creditLimit, double unverifiedLimit) {
         this.id = UUID.randomUUID();
+        centralBankObserver.registerBank(this);
+        this.creditLimit = creditLimit;
+        this.unverifiedLimit = unverifiedLimit;
+    }
+
+    public void update(BankNotification bankNotification){
+        notifications.add(bankNotification);
     }
 }
