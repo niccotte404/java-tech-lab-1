@@ -4,25 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab595096-8296-4234-b479-f19886b46265" name="Changes" comment="create project, add main models (User, Account, Bank, Transaction) and enums (TransactionType, UserType, AccountType)">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lab1/entities/models/Bank.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lab1/entities/models/CentralBank.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lab1/entities/models/DateInDays.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lab1/entities/models/Percentage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lab1/entities/models/Transaction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lab1/entities/models/Tuple.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lab1/enums/TransactionStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lab1/services/impl/BankServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lab1/services/impl/CommissionServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lab1/services/interfaces/BankService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lab1/services/interfaces/CommissionService.java" afterDir="false" />
+    <list default="true" id="ab595096-8296-4234-b479-f19886b46265" name="Changes" comment="add and fix models, add services and impls, validate user verification, make count commission service">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lab1/commands/Command.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lab1/commands/ReplenishCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lab1/commands/TransferCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lab1/commands/WithdrawCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lab1/entities/Transaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lab1/entities/models/memento/TransactionMemento.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lab1/entities/models/memento/TransactionMementoStorage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lab1/services/TransactionMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lab1/services/impl/CentralBankServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lab1/services/interfaces/CentralBankService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lab1/enums/TransactionType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lab1/enums/TransactionType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lab1/models/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lab1/entities/models/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lab1/models/Bank.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lab1/models/Transaction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lab1/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lab1/entities/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lab1/entities/models/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lab1/entities/models/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lab1/entities/models/Bank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lab1/entities/models/Bank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lab1/entities/models/CentralBank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lab1/entities/models/CentralBank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lab1/entities/models/Transaction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lab1/services/impl/BankServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lab1/services/impl/BankServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lab1/services/impl/CommissionServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lab1/services/interfaces/BankService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lab1/services/interfaces/BankService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lab1/services/interfaces/CommissionService.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,8 +37,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package-info" />
-        <option value="Interface" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -73,22 +74,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -111,7 +113,7 @@
       <workItem from="1709044614844" duration="1328000" />
       <workItem from="1709046085530" duration="216000" />
       <workItem from="1709050308003" duration="63000" />
-      <workItem from="1709061446994" duration="9686000" />
+      <workItem from="1709061446994" duration="21697000" />
     </task>
     <task id="LOCAL-00001" summary="create project, add main models (User, Account, Bank, Transaction) and enums (TransactionType, UserType, AccountType)">
       <option name="closed" value="true" />
@@ -121,7 +123,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708862698787</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add and fix models, add services and impls, validate user verification, make count commission service">
+      <option name="closed" value="true" />
+      <created>1709071656618</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1709071656618</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,6 +150,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="create project, add main models (User, Account, Bank, Transaction) and enums (TransactionType, UserType, AccountType)" />
-    <option name="LAST_COMMIT_MESSAGE" value="create project, add main models (User, Account, Bank, Transaction) and enums (TransactionType, UserType, AccountType)" />
+    <MESSAGE value="add and fix models, add services and impls, validate user verification, make count commission service" />
+    <option name="LAST_COMMIT_MESSAGE" value="add and fix models, add services and impls, validate user verification, make count commission service" />
   </component>
 </project>
