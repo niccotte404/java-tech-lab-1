@@ -48,9 +48,9 @@ public class BankServiceImpl implements BankService {
         else
             unverifiedLimit = Double.MAX_VALUE;
 
-        actionMap.put(TransactionType.TRANSFER, new WithdrawCommand(transaction).execute(unverifiedLimit));
+        actionMap.put(TransactionType.TRANSFER, new TransferCommand(transaction).execute(unverifiedLimit));
         actionMap.put(TransactionType.REPLENISH, new ReplenishCommand(transaction).execute(unverifiedLimit));
-        actionMap.put(TransactionType.WITHDRAW, new TransferCommand(transaction).execute(currentBank.getCreditLimit()));
+        actionMap.put(TransactionType.WITHDRAW, new WithdrawCommand(transaction).execute(currentBank.getCreditLimit()));
 
         return actionMap.get(transaction.getType());
     }
