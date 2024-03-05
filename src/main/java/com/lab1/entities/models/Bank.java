@@ -3,7 +3,7 @@ package com.lab1.entities.models;
 import com.lab1.entities.User;
 import com.lab1.entities.models.data.Limits;
 import com.lab1.entities.models.notifications.BankNotification;
-import com.lab1.observers.interfaces.CentralBankObserver;
+import com.lab1.entities.observers.interfaces.CentralBankObserver;
 import lombok.Getter;
 import lombok.NonNull;
 

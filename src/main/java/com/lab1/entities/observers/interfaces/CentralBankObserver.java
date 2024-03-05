@@ -1,4 +1,4 @@
-package com.lab1.observers.interfaces;
+package com.lab1.entities.observers.interfaces;
 
 import com.lab1.entities.models.Bank;
 

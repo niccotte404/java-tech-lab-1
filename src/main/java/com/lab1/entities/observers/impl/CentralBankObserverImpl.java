@@ -1,8 +1,8 @@
-package com.lab1.observers.impl;
+package com.lab1.entities.observers.impl;
 
 import com.lab1.entities.models.Bank;
 import com.lab1.entities.models.notifications.BankNotification;
-import com.lab1.observers.interfaces.CentralBankObserver;
+import com.lab1.entities.observers.interfaces.CentralBankObserver;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 

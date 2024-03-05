@@ -1,9 +1,9 @@
-package com.lab1.observers.impl;
+package com.lab1.entities.observers.impl;
 
 import com.lab1.entities.User;
 import com.lab1.entities.models.Bank;
 import com.lab1.entities.models.notifications.UserNotification;
-import com.lab1.observers.interfaces.BankObserver;
+import com.lab1.entities.observers.interfaces.BankObserver;
 import com.lab1.repositories.impl.AccountRepositoryImpl;
 import com.lab1.repositories.interfaces.AccountRepository;
 import lombok.NonNull;

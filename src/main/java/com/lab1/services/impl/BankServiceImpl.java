@@ -15,6 +15,14 @@ import com.lab1.services.interfaces.BankService;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * BankService(Impl) is the one of the main services of this application
+ * Using this method users can make different type of transactions
+ * Furthermore it can figure out settings of {@link Bank} model
+
+ * Please see the {@link BankService} class for true identity
+ * @author niccotte
+ */
 public class BankServiceImpl implements BankService {
 
     private final Bank currentBank;
@@ -37,6 +45,12 @@ public class BankServiceImpl implements BankService {
         currentBank.getPercents().add(percentage);
     }
 
+    /**
+     * <p>This is a simple description of the method</p>
+     * @param transaction provides api to the action
+     * @return current transaction with another/same (it depends) type
+     * @since 1.0
+     */
     @Override
     public Transaction makeTransaction(Transaction transaction) {
 
