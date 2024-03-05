@@ -26,13 +26,12 @@ public class Transaction {
 
     private final TransactionMementoStorage transactionMementoStorage;
 
-    public Transaction(Account account, Account destinationAccount, TransactionType type, double money, TransactionStatus status) {
+    public Transaction(Account account, Account destinationAccount, TransactionType type, double money) {
         id = UUID.randomUUID();
         this.account = account;
         this.destinationAccount = destinationAccount;
         this.type = type;
         this.money = money;
-        this.status = status;
         this.transactionMementoStorage = new TransactionMementoStorage();
     }
 

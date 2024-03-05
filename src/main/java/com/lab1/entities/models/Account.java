@@ -23,11 +23,10 @@ public class Account {
     // deside what type of collection to use
     private List<Transaction> transactionHistory = new ArrayList<>();
 
-    public Account(UUID userId, AccountType type, double money, List<Transaction> transactionHistory) {
+    public Account(UUID userId, AccountType type, double money) {
         id = UUID.randomUUID();
         this.userId = userId;
         this.type = type;
         this.money = money;
-        this.transactionHistory = transactionHistory;
     }
 }
