@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab595096-8296-4234-b479-f19886b46265" name="Changes" comment="add tests and refactor application">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lab1/entities/models/Bank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lab1/entities/models/Bank.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lab1/observers/impl/BankObserverImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lab1/entities/observers/impl/BankObserverImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lab1/observers/impl/CentralBankObserverImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lab1/entities/observers/impl/CentralBankObserverImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lab1/observers/interfaces/BankObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lab1/entities/observers/interfaces/BankObserver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lab1/observers/interfaces/CentralBankObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lab1/entities/observers/interfaces/CentralBankObserver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lab1/services/impl/BankServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lab1/services/impl/BankServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lab1/services/impl/CentralBankServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lab1/services/impl/CentralBankServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/MainTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MainTests.java" afterDir="false" />
-    </list>
+    <list default="true" id="ab595096-8296-4234-b479-f19886b46265" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -111,7 +100,7 @@
       <workItem from="1709061446994" duration="28465000" />
       <workItem from="1709097617562" duration="135000" />
       <workItem from="1709213568405" duration="1955000" />
-      <workItem from="1709653698209" duration="2545000" />
+      <workItem from="1709653698209" duration="2665000" />
     </task>
     <task id="LOCAL-00001" summary="create project, add main models (User, Account, Bank, Transaction) and enums (TransactionType, UserType, AccountType)">
       <option name="closed" value="true" />
@@ -169,7 +158,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709655133838</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add javadoc to BankServiceImpl and CentralBankServiceImpl">
+      <option name="closed" value="true" />
+      <created>1709656273873</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1709656273873</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,6 +191,7 @@
     <MESSAGE value="make unverifiedLimit local" />
     <MESSAGE value="fix BankServiceImpl withdraw and transfer command in map" />
     <MESSAGE value="add tests and refactor application" />
-    <option name="LAST_COMMIT_MESSAGE" value="add tests and refactor application" />
+    <MESSAGE value="add javadoc to BankServiceImpl and CentralBankServiceImpl" />
+    <option name="LAST_COMMIT_MESSAGE" value="add javadoc to BankServiceImpl and CentralBankServiceImpl" />
   </component>
 </project>
